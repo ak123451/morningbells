@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Encode email components
         const subject = encodeURIComponent("Admission Application - Morning Bells School");
         const body = encodeURIComponent(emailBody);
-        const recipient = "admissions@morningbellsschool.in";
+        const recipient = "gangwar9831@gmail.com";
 
         // Create mailto URL
         const mailtoUrl = `mailto:${recipient}?subject=${subject}&body=${body}`;
