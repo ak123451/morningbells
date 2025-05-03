@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Morning Bells School</title>
+    <meta name="description" content="View photos and videos of campus life, events, activities, and facilities at Morning Bells School in Rudrapur.">
+    <meta name="keywords" content="Morning Bells School gallery, school photos, school videos, school events, campus life, Rudrapur school pictures">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/logo.jpeg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="../assets/images/logo.jpeg">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://morningbellsschool.in/pages/gallery.html" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://morningbellsschool.in/pages/gallery.html" />
+    <meta property="og:title" content="Gallery - Morning Bells School" />
+    <meta property="og:description" content="View photos and videos of campus life, events, activities, and facilities at Morning Bells School in Rudrapur." />
+    <meta property="og:image" content="https://morningbellsschool.in/assets/images/logo.jpeg" /> <!-- Use a representative image if available -->
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://morningbellsschool.in/pages/gallery.html" />
+    <meta property="twitter:title" content="Gallery - Morning Bells School" />
+    <meta property="twitter:description" content="View photos and videos of campus life, events, activities, and facilities at Morning Bells School in Rudrapur." />
+    <meta property="twitter:image" content="https://morningbellsschool.in/assets/images/logo.jpeg" /> <!-- Use a representative image if available -->
+    <!-- Schema.org Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Gallery - Morning Bells School",
+      "description": "Photo and video gallery showcasing campus life, events, and activities at Morning Bells School.",
+      "url": "https://morningbellsschool.in/pages/gallery.html",
+      "isPartOf": {
+        "@type": "School",
+        "name": "Morning Bells School",
+        "url": "https://morningbellsschool.in/",
+        "logo": "https://morningbellsschool.in/assets/images/logo.jpeg",
+         "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ambika vihar, Bhurarani",
+            "addressLocality": "Rudrapur",
+            "addressRegion": "Uttarakhand",
+            "postalCode": "263153",
+            "addressCountry": "IN"
+          }
+      }
+      // Note: Ideally, individual images/videos could be marked up within the mainEntity if feasible
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../assets/images/logo.jpeg" alt="Morning Bells School Logo">
+            <h1>Morning Bells School</h1>
+        </div>
+        <div class="mobile-buttons-bar">
+            <div style="position: relative;">
+                <button class="quick-access-btn">
+                    Quick Access <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="quick-access-dropdown">
+                    <a href="#"><i class="fas fa-credit-card"></i> Pay Fees</a>
+                    <a href="admissions.html"><i class="fas fa-user-plus"></i> Admission</a>
+                </div>
+            </div>
+            <button class="menu-toggle"><span>Menu</span>&#9776;</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News & Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="hero" style="background-color: var(--primary);">
+        <div class="hero-text">
+            <h2>School Gallery</h2>
+            <p>Capturing moments from our vibrant school life</p>
+        </div>
+    </section>
+
+    <!-- Gallery Categories Section -->
+    <section class="section-padding" style="background-color: var(--light);">
+        <div class="container">
+            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 30px;">
+                <a href="#" class="btn-small" style="background-color: var(--primary); color: var(--white);">All Photos</a>
+                <a href="#" class="btn-small" style="background-color: white; color: var(--dark); border: 1px solid #ddd;">Campus</a>
+                <a href="#" class="btn-small" style="background-color: white; color: var(--dark); border: 1px solid #ddd;">Events</a>
+                <a href="#" class="btn-small" style="background-color: white; color: var(--dark); border: 1px solid #ddd;">Sports</a>
+                <a href="#" class="btn-small" style="background-color: white; color: var(--dark); border: 1px solid #ddd;">Activities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding">
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            
+            <!-- Gallery with lightbox effect -->
+            <div class="gallery-grid" id="lightgallery">
+                <div class="gallery-item">
+                    <a href="images/gallery1.jpg" data-caption="Annual Day Celebration">
+                        <img src="images/gallery1.jpg" alt="Annual Day Celebration" loading="lazy">
+                        <div class="gallery-caption">Annual Day Celebration</div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/gallery2.jpg" data-caption="Science Exhibition">
+                        <img src="images/gallery2.jpg" alt="Science Exhibition" loading="lazy">
+                        <div class="gallery-caption">Science Exhibition</div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/gallery3.jpg" data-caption="Sports Day">
+                        <img src="images/gallery3.jpg" alt="Sports Day" loading="lazy">
+                        <div class="gallery-caption">Sports Day</div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/gallery4.jpg" data-caption="Art Exhibition">
+                        <img src="images/gallery4.jpg" alt="Art Exhibition" loading="lazy">
+                        <div class="gallery-caption">Art Exhibition</div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/gallery5.jpg" data-caption="Classroom Learning">
+                        <img src="images/gallery5.jpg" alt="Classroom Learning" loading="lazy">
+                        <div class="gallery-caption">Classroom Learning</div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/gallery6.jpg" data-caption="Annual Day">
+                        <img src="images/gallery6.jpg" alt="Annual Day" loading="lazy">
+                        <div class="gallery-caption">Annual Day</div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/gallery7.jpg" data-caption="Computer Lab">
+                        <img src="images/gallery7.jpg" alt="Computer Lab" loading="lazy">
+                        <div class="gallery-caption">Computer Lab</div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/gallery8.jpg" data-caption="School Building">
+                        <img src="images/gallery8.jpg" alt="School Building" loading="lazy">
+                        <div class="gallery-caption">School Building</div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/gallery9.jpg" data-caption="Music Class">
+                        <img src="images/gallery9.jpg" alt="Music Class" loading="lazy">
+                        <div class="gallery-caption">Music Class</div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/gallery10.jpg" data-caption="Playground">
+                        <img src="images/gallery10.jpg" alt="Playground" loading="lazy">
+                        <div class="gallery-caption">Playground</div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/gallery11.jpg" data-caption="Sports Competition">
+                        <img src="images/gallery11.jpg" alt="Sports Competition" loading="lazy">
+                        <div class="gallery-caption">Sports Competition</div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/gallery12.jpg" data-caption="Library">
+                        <img src="images/gallery12.jpg" alt="Library" loading="lazy">
+                        <div class="gallery-caption">Library</div>
+                    </a>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#" class="btn">Load More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery Section -->
+    <section class="section-padding" style="background-color: var(--light);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Video Gallery</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
+                
+                
+                <div class="card">
+                    <div style="position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio */ height: 0; overflow: hidden; border-radius: var(--radius) var(--radius) 0 0;">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" loading="lazy"></iframe>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3>School Campus Tour</h3>
+                        <p>Take a virtual tour of our modern campus facilities including classrooms, laboratories, playground, and more.</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Ambika vihar, Bhurarani, Rudrapur, Uttarakhand - 263153</p>
+                    <p><i class="fas fa-phone"></i> 05944-358759, +918273062797</p>
+                    <p><i class="fas fa-envelope"></i> mbsrudrapur@gmail.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://api.whatsapp.com/send?phone=+918273062797" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Morning Bells School | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <!-- Add lightGallery JS for photo gallery lightbox effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script>
+        // Initialize lightGallery
+        if (document.getElementById('lightgallery')) {
+            lightGallery(document.getElementById('lightgallery'), {
+                selector: '.gallery-item a',
+                counter: true,
+                download: false
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.btn-small');
+            buttons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const category = button.textContent.trim().toLowerCase();
+                    const galleryItems = document.querySelectorAll('.gallery-item');
+
+                    // Reset visibility for all items
+                    galleryItems.forEach(item => item.style.display = 'block');
+
+                    if (category !== 'all photos') {
+                        galleryItems.forEach(item => {
+                            const caption = item.querySelector('.gallery-caption').textContent.trim().toLowerCase();
+                            if (!caption.includes(category)) {
+                                item.style.display = 'none';
+                            }
+                        });
+                    }
+
+                    // Update button styles
+                    buttons.forEach(btn => {
+                        btn.style.backgroundColor = 'white';
+                        btn.style.color = 'var(--dark)';
+                    });
+                    button.style.backgroundColor = 'var(--primary)';
+                    button.style.color = 'white';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
