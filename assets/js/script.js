@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Form validation (existing code)
+  // Form validation and email submission
   const admissionsForm = document.getElementById("admissions-form");
   const contactForm = document.getElementById("contact-form");
 
@@ -36,10 +36,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (admissionsForm) {
     admissionsForm.addEventListener("submit", (e) => {
-      if (!validateForm(admissionsForm)) {
-        e.preventDefault();
-      } else {
-        alert("Form submitted successfully! We will contact you soon.");
+      e.preventDefault(); // Prevent default form submission
+      if (validateForm(admissionsForm)) {
+        // Collect form data
+        const formData = new FormData(admissionsForm);
+        const data = {};
+        formData.forEach((value, key) => {
+          data[key] = value;
+        });
+
+        // Create email body
+        const emailBody = `
+          Admission Application Details:
+          Full Name: ${data.name}
+          Date of Birth: ${data.dob}
+          Gender: ${data.gender}
+          Parent/Guardian Name: ${data['parent-name']}
+          Email Address: ${data.email || 'Not provided'}
+          Phone Number: ${data.phone}
+          Address: ${data.address}
+          Class Applying For: ${data.class}
+          Previous School: ${data['previous-school'] || 'Not provided'}
+          Additional Information: ${data['additional-info'] || 'Not provided'}
+        `.trim();
+
+        // Encode email components
+        const subject = encodeURIComponent("Admission Application - Morning Bells School");
+        const body = encodeURIComponent(emailBody);
+        const recipient = "admissions@morningbellsschool.in";
+
+        // Create mailto URL
+        const mailtoUrl = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+        // Open email client
+        window.location.href = mailtoUrl;
+
+        // Show success message
+        alert("Form submitted successfully! Your email client has been opened to send the application details.");
       }
     });
   }
@@ -145,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Testimonial slider
   const testimonialSlider = document.querySelector(".testimonial-slider");
   if (testimonialSlider) {
-    const slides = testimonialSlider.querySelectorAll(".testimonial");
+    const slides = testamentSlider.querySelectorAll(".testimonial");
     const dotsContainer = testimonialSlider.querySelector(".slider-dots");
     let currentSlide = 0;
 
